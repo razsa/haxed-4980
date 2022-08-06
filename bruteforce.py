@@ -16,7 +16,7 @@ while i < len(new_pwlist):
 	if hashedGuess == shaOne:
 		print(f'The password is {passwordGuess} took {attempt} attempts.')
 		exit(0)
-	elif hashedGuess != shaOne:
+	else:
 		print(f'Password: {passwordGuess}, does not match, trying next...')
 		i += 1
 		attempt += 1
